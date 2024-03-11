@@ -11,7 +11,7 @@ import OrderController from './app/controllers/OrderController'
 const routes = new Router()
 const upload = multer(multerConfig)
 
-routes.get("/", (request, response) => {
+routes.get("/",  function(request, response) {
     return request.json({message: 'Error'})
 })
 routes.post('/users', UserController.store)
