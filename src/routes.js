@@ -11,7 +11,7 @@ import OrderController from './app/controllers/OrderController'
 const routes = new Router()
 const upload = multer(multerConfig)
 
-
+routes.get("/")
 routes.post('/users', UserController.store)
 routes.post('/sessions', SessionController.store)
 
